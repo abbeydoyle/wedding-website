@@ -1,2 +1,7 @@
 <app-guests-page></app-guests-page>
 <app-guest-list [guests]="guests"></app-guest-list>
+
+<app-rsvp-check
+  [rsvpStatus]="rsvpStatus"
+  (checkRsvp)="handleCheckRsvp($event)"
+></app-rsvp-check>

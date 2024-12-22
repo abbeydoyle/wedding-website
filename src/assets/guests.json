@@ -1,0 +1,5 @@
+[
+  { "first_name": "John", "last_name": "Doe", "rsvp_status": "Yes" },
+  { "first_name": "Jane", "last_name": "Smith", "rsvp_status": "No" },
+  { "first_name": "Alice", "last_name": "Johnson", "rsvp_status": "Pending" }
+]
