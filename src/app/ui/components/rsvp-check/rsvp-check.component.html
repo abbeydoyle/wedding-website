@@ -21,7 +21,14 @@
       />
       <label for="lastName" class="custom-label">Last Name</label>
     </div>
-    <button class="custom-button" (click)="onSubmit()">Search</button>
+    <button class="custom-button" (click)="onSubmit()">
+      <img
+        src="../../../../assets/wired-outline-19-magnifier-zoom-search-hover-spin.gif"
+        alt="Search Icon"
+        class="search-icon"
+      />
+      <span>Search</span>
+    </button>
   </div>
   <p class="status">{{ rsvpStatus }}</p>
 </div>
