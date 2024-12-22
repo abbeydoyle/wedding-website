@@ -1,24 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
+  font-family: 'allright';
 
-      font-family: 'allright';
-    
-      src: url('../public/allright.ttf'); /* Replace with your font file path */
-    
-    }
+  src: url('../public/allright.ttf'); /* Replace with your font file path */
+}
 
-    @font-face {
+@font-face {
+  font-family: 'light-cinematografica';
 
-      font-family: 'light-cinematografica';
-    
-      src: url('../public/Cinematografica-Light-trial.ttf'); /* Replace with your font file path */
-    
-    }
+  src: url('../public/Cinematografica-Light-trial.ttf'); /* Replace with your font file path */
+}
 
-    @font-face {
+@font-face {
+  font-family: 'xt-light-cinematografica';
 
-      font-family: 'xt-light-cinematografica';
-    
-      src: url('../public/Cinematografica-Extralight-trial.ttf'); /* Replace with your font file path */
-    
-    }
+  src: url('../public/Cinematografica-Extralight-trial.ttf'); /* Replace with your font file path */
+}

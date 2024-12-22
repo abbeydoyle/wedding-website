@@ -1,23 +1,23 @@
 .navbar {
-      font-family: 'light-cinematografica';
-      width: 100%;
-      display: flex;
-      justify-content: space-around; /* Distributes links evenly with space around them */
-      align-items: center; /* Aligns items vertically */
-      background-color: #f0f0f0; /* Optional: Add a background color */
-      padding: 15px 0; /* Add more vertical padding */
-      box-sizing: border-box; /* Ensure padding doesn't exceed width */
-  }
-  
-  .navbar a {
-      text-decoration: none; /* Removes underlines */
-      color: #333; /* Adjust text color */
-      padding: 0 20px; /* Add spacing between links */
-      font-size: 25px; /* Increased font size for links */
-      // font-weight: bold; /* Optional: Make links bold */
-      letter-spacing: 5px
-  }
-  
-  .navbar a:hover {
-      color: #007BFF; /* Change color on hover (optional) */
-  }
+  font-family: 'light-cinematografica';
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Distributes links evenly with space around them */
+  align-items: center; /* Aligns items vertically */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+  padding: 15px 0; /* Add more vertical padding */
+  box-sizing: border-box; /* Ensure padding doesn't exceed width */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underlines */
+  color: #333; /* Adjust text color */
+  padding: 0 20px; /* Add spacing between links */
+  font-size: 25px; /* Increased font size for links */
+  // font-weight: bold; /* Optional: Make links bold */
+  letter-spacing: 5px;
+}
+
+.navbar a:hover {
+  color: #007bff; /* Change color on hover (optional) */
+}
