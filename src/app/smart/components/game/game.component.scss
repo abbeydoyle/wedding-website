@@ -1,0 +1,127 @@
+.game-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-area {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(to bottom, #87cefa, #98fb98);
+  background-size: cover;
+  border: 2px solid #000;
+}
+
+.character {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  // transform: scale(1.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform-origin: center bottom; /* Scale relative to the bottom-center */
+  transform: scale(var(--scale-factor, 1)); /* Default scale factor is 1 */
+}
+
+
+.game-area .character {
+  --scale-factor: 1; /* Default scale */
+}
+
+#user {
+  background-color: red;
+}
+
+#partner {
+  background-color: blue;
+}
+
+#cat {
+  background-color: orange;
+}
+
+#dog1 {
+  background-color: white;
+}
+#dog2 {
+  background-color: tan;
+}
+
+/* General Pixelated Character Styles */
+.pixel-art {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(10, 10px); /* 10x10 grid with 10px pixels */
+  grid-template-rows: repeat(10, 10px);
+  width: 100px;
+  height: 100px;
+}
+
+.sign {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  transform: rotateX(20deg); /* Tilt the sign slightly */
+  transform-origin: bottom center;
+}
+
+.path {
+  position: absolute;
+  width: 200px; /* Path width */
+  height: 100%; /* Full height of the game area */
+  background: #c2b280; /* Path color */
+  left: 300px; /* Centered in the game area */
+  top: 0;
+  border-radius: 100px; /* Rounded edges */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adds depth to the path */
+}
+
+.grass {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(to bottom, #98fb98, #6abf69); /* Grass gradient */
+  z-index: -1; /* Background layer */
+}
+
+.tree {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #228B22; /* Placeholder for tree */
+  border-radius: 30px; /* Circular top for tree */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bush {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #32CD32; /* Placeholder for bush */
+  border-radius: 20px;
+}
+
+
+
+.popup {
+  position: absolute;
+  top: -50px; /* Place above the sign */
+  left: -30px;
+  width: 120px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
