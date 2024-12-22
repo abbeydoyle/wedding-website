@@ -1,14 +1,13 @@
 import { HttpClientModule } from '@angular/common/http'
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { FormsModule } from '@angular/forms'
-import { ButtonModule } from 'primeng/button'
 
 @Component({
   selector: 'app-rsvp-check',
   standalone: true,
-  imports: [FormsModule, HttpClientModule, ButtonModule],
+  imports: [FormsModule, HttpClientModule],
   templateUrl: './rsvp-check.component.html',
-  styleUrl: './rsvp-check.component.scss',
+  styleUrls: ['./rsvp-check.component.scss'],
 })
 export class RsvpCheckComponent {
   @Input() rsvpStatus: string = '' // Input for the RSVP status message
@@ -24,4 +23,5 @@ export class RsvpCheckComponent {
     // Emit the entered first and last names to the parent component
     this.checkRsvp.emit({ firstName: this.firstName, lastName: this.lastName })
   }
+  
 }

@@ -1,16 +1,27 @@
 <div class="rsvp-check">
   <h3>Check Your RSVP Status</h3>
-  <input
-    type="text"
-    [(ngModel)]="firstName"
-    placeholder="Enter your first name"
-  />
-  <input
-    type="text"
-    [(ngModel)]="lastName"
-    placeholder="Enter your last name"
-  />
-  <button (click)="onSubmit()">Check</button>
-  <p>{{ rsvpStatus }}</p>
-  <p-button label="Check" />
+  <div class="row">
+    <div class="input-wrapper">
+      <input
+        id="firstName"
+        type="text"
+        [(ngModel)]="firstName"
+        class="custom-input"
+        placeholder=" "
+      />
+      <label for="firstName" class="custom-label">First Name</label>
+    </div>
+    <div class="input-wrapper">
+      <input
+        id="lastName"
+        type="text"
+        [(ngModel)]="lastName"
+        class="custom-input"
+        placeholder=" "
+      />
+      <label for="lastName" class="custom-label">Last Name</label>
+    </div>
+    <button class="custom-button" (click)="onSubmit()">Search</button>
+  </div>
+  <p class="status">{{ rsvpStatus }}</p>
 </div>
