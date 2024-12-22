@@ -1,11 +1,12 @@
 import { HttpClientModule } from '@angular/common/http'
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { FormsModule } from '@angular/forms'
+import { ButtonModule } from 'primeng/button'
 
 @Component({
   selector: 'app-rsvp-check',
   standalone: true,
-  imports: [FormsModule, HttpClientModule],
+  imports: [FormsModule, HttpClientModule, ButtonModule],
   templateUrl: './rsvp-check.component.html',
   styleUrl: './rsvp-check.component.scss',
 })
