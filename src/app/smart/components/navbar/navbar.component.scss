@@ -1,6 +1,7 @@
 .navbar {
-  font-family: 'xt-light-cinematografica';
+  font-family: 'light-cinematografica';
   width: 100%;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-around; /* Distributes links evenly with space around them */
   align-items: center; /* Aligns items vertically */
@@ -8,7 +9,7 @@
     240,
     240,
     240,
-    0.3
+    0.6
   ); /* Optional: Add a background color */
   padding: 15px 0; /* Add more vertical padding */
   box-sizing: border-box; /* Ensure padding doesn't exceed width */
@@ -24,5 +25,5 @@
 }
 
 .navbar a:hover {
-  color: #007bff; /* Change color on hover (optional) */
+  color: olive; /* Change color on hover (optional) */
 }

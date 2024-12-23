@@ -2,3 +2,59 @@ app-countdown-clock {
   display: block; /* Ensure the element is displayed */
   z-index: 10; /* Adjust if other elements overlap */
 }
+
+.sparkler-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Full viewport height */
+}
+
+.sparkler-gif {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  animation: smooth-shake 5s infinite ease-in-out; /* Apply smoother animation */
+}
+
+/* Smoother shake animation */
+@keyframes smooth-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(-1.5deg);
+  }
+  40% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(1.5deg);
+  }
+  70% {
+    transform: rotate(-1.5deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

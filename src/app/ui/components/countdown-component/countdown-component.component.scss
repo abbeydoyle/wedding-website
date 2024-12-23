@@ -4,12 +4,18 @@
   align-items: center;
   text-align: center;
   color: black; /* Ensure text is visible on a dark background */
-  height: 75vh;
+  height: 50vh;
 }
 
 .countdown {
   display: flex;
   gap: 20px;
+}
+
+.unit-container {
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .countdown div {

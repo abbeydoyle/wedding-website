@@ -1,1 +1,9 @@
-<app-countdown-component [timeLeft]="timeLeft"></app-countdown-component>
+<div *ngIf="isLoading; else countdownTemplate" class="sparkler-container">
+<div class="sparkler-gif">
+    <img src="../../../../assets/2556767_03ade.gif" height="100px"/>
+  </div>
+</div>
+
+<ng-template #countdownTemplate>
+  <app-countdown-component [timeLeft]="timeLeft"></app-countdown-component>
+</ng-template>

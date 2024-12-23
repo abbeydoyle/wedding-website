@@ -1,12 +1,13 @@
 .title {
   font-family: 'allright';
   text-align: center;
-  font-size: 36px; /* Increase main title font size */
+  font-size: 64px; /* Increase main title font size */
 }
 
 .title h1 {
-  font-size: 48px; /* Larger font size for the main heading */
-  margin: 0; /* Remove default margins */
+  font-size: 64px; /* Larger font size for the main heading */
+  margin: 0;
+  padding-top: 2rem;
 }
 
 .title h2 {
