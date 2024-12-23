@@ -1,0 +1,30 @@
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black; /* Ensure text is visible on a dark background */
+  height: 75vh;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+span {
+  font-size: 64px; /* Adjust size as needed */
+  font-weight: bolder;
+  font-family: 'allright';
+}
+
+p {
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'allright';
+}
