@@ -23,5 +23,4 @@ export class RsvpCheckComponent {
     // Emit the entered first and last names to the parent component
     this.checkRsvp.emit({ firstName: this.firstName, lastName: this.lastName })
   }
-  
 }

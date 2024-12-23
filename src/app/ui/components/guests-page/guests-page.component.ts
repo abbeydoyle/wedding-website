@@ -1,28 +1,22 @@
-import { Component, input } from '@angular/core'
-import { DeviceDetectorService } from 'ngx-device-detector'
+import { Component, EventEmitter, Input, input, Output } from '@angular/core'
+import { RsvpCheckComponent } from '../rsvp-check/rsvp-check.component'
+import { SendRsvpComponent } from '../send-rsvp/send-rsvp.component'
 
 @Component({
   selector: 'app-guests-page',
   standalone: true,
-  imports: [GuestsPageComponent],
+  imports: [RsvpCheckComponent, SendRsvpComponent],
   templateUrl: './guests-page.component.html',
   styleUrl: './guests-page.component.scss',
 })
 export class GuestsPageComponent {
-  isMobile: boolean
+  @Input() rsvpStatus!: string // Receive rsvpStatus from GuestsComponent
+  @Output() checkRsvp = new EventEmitter<{
+    firstName: string
+    lastName: string
+  }>()
 
-  constructor(private deviceService: DeviceDetectorService) {
-    this.isMobile = this.deviceService.isMobile()
-  }
-
-  handleAction() {
-    if (this.isMobile) {
-      // Mobile: Send SMS
-      window.location.href = 'sms:+1234567890?body=Hi, I have a question!'
-    } else {
-      // Desktop: Send Email
-      window.location.href =
-        'mailto:example@example.com?subject=Question&body=Hi, I have a question!'
-    }
+  onCheckRsvp(event: { firstName: string; lastName: string }): void {
+    this.checkRsvp.emit(event) // Emit event to GuestsComponent
   }
 }

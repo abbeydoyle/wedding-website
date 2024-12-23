@@ -1,7 +1,6 @@
-<app-guests-page></app-guests-page>
-<app-guest-list [guests]="guests"></app-guest-list>
-
-<app-rsvp-check
+<!-- <app-guest-list [guests]="guests"></app-guest-list> -->
+<app-navbar></app-navbar>
+<app-guests-page
   [rsvpStatus]="rsvpStatus"
   (checkRsvp)="handleCheckRsvp($event)"
-></app-rsvp-check>
+></app-guests-page>

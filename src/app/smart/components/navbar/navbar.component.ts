@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { staticHeader } from '../../mocks/header.mock'
+import { staticHeader } from '../../../ui/mocks/header.mock'
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +9,5 @@ import { staticHeader } from '../../mocks/header.mock'
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  @Input() navbar!: any
+  navbar: any = staticHeader.navbar
 }

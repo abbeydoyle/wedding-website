@@ -59,7 +59,9 @@
     color: #fff; /* Ensure text is visible */
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition:
+      background-color 0.3s,
+      transform 0.2s;
 
     &:hover {
       background-color: #e5533c; /* Slightly darker shade for hover */
@@ -97,11 +99,10 @@
   width: 20px; /* Adjust size as needed */
   height: 20px;
   margin-right: 10px; /* Adds spacing between the icon and the text */
-  margin-left:-10px
+  margin-left: -10px;
 }
 
 .custom-button span {
   flex: 1; /* Ensures the text takes up remaining space */
   text-align: left; /* Aligns the text */
 }
-
